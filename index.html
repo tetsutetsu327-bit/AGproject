@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AG Artist Verification | アーティスト認証制度</title>
+    <style>
+        /* 基本のデザイン設定 */
+        :root {
+            --main-bg: #ffffff;
+            --sub-bg: #f4f7f9;
+            --accent: #2c3e50;
+            --text: #333333;
+            --blue: #3498db;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            color: var(--text);
+            margin: 0;
+            background-color: var(--sub-bg);
+        }
+        header {
+            background: var(--accent);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        h1 { margin: 0; font-size: 1.8rem; letter-spacing: 2px; }
+        .tagline { font-size: 0.9rem; opacity: 0.8; }
+
+.container {
+            max-width: 800px;
+            margin: -2rem auto 2rem;
+            padding: 0 1rem;
+        }
+        section {
+            background: var(--main-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+        h2 {
+            font-size: 1.3rem;
+            border-bottom: 2px solid var(--blue);
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: var(--accent);
+        }
+
+        /* IDテーブルのスマホ対応 */
+        .table-wrapper { overflow-x: auto; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+}
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+            text-align: left;
+        }
+        th { background: #f9f9f9; color: #666; }
+
+        /* バッジのデザイン /
+        .badge-area { display: flex; gap: 10px; flex-wrap: wrap; }
+        .badge {
+            background: var(--blue);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1rem;
+            font-size: 0.8rem;
+            color: #999;
+        }
+
+        / スマホ向け微調整 */
+        @media (max-width: 600px) {
+            header { padding: 2rem 1rem; }
+            section { padding: 1.5rem; }
+            h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AG Artist Verification</h1>
+    <p class="tagline">— アーティストの「手描き」を証明する —</p>
+</header>
+
+<div class="container">
+    <section>
+        <h2>制度の目的</h2>
+        <p>AG（Artist Guaranteed）は、作品が生成AIを使用せず、アーティスト本人の手によって描かれたものであることを認証する制度です。アナログ・手描き作品の価値を守り、信頼を可視化します。</p>
+    </section>
+
+    <section>
+        <h2>認証ID体系</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>IDレンジ</th>
+                        <th>対象</th>
+                        <th>備考</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+<td><strong>AG000</strong></td>
+                        <td>管理者</td>
+                        <td>運営責任者</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AG001〜009</strong></td>
+                        <td>運営チーム</td>
+                        <td>初期協力メンバー</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AG010〜999</strong></td>
+                        <td>一般ユーザー</td>
+                        <td>認証済みアーティスト</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section>
+       <section style="text-align: center;">
+        <h2>認証申請はこちら</h2>
+        <p>アナログ・手描き証明のための動画（タイムラプス等）をご用意の上、以下のフォームより申請してください。
+またお手数おかけしますがタイムラプス動画はyoutubeに限定公開しURLをご記載ください。</p>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe90t2uGelha9gi_xeufv4aUJS5icnPBx7xD8gUEUdWBbYIxw/viewform?usp=header" target="_blank" style="
+            display: inline-block;
+            background: #e67e22;
+            color: white;
+            padding: 15px 40px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(230, 126, 34, 0.3);
+            margin: 1rem 0;
+        ">
+            認証申請フォームを開く
+        </a>
+
+        <p style="font-size: 0.8rem; color: #7f8c8d;">※現在はテスト運用中のため、白紙のフォームへ飛びます。</p>
+    </section>
+</div>
+
+<footer>
+    &copy; 2026 AG Verification Project. All Rights Reserved.
+</footer>
+
+</body>
+</html>
